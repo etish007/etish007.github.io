@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/Etish/Desktop/assignment3/assignment3.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ </head><body><center>
+ <title>Calculator</title>
+ 
+ 
+ <table>
+ <tbody><tr>
+
+ <td><input type="text" name="res" value="" id="res"></td>
+ <td></td><td> <button type="button" name="button" id="Clear" onclick="clearText()"> Clear </button> </td>
+ </tr>
+</tbody></table>
+ 
+
+
+<table style="position:absolute; right: 734px;"><tbody><tr>
+    <td></td>
+
+</tr><tr>
+<td> <button type="button" name="button" id="7" onclick="calculator(this)"> 7 </button> </td>
+
+<td> <button type="button" name="button" id="8" onclick="calculator(this)"> 8 </button> </td>   
+
+<td> <button type="button" name="button" id="9" onclick="calculator(this)"> 9 </button> </td>
+
+<td> <button type="button" name="button" id="/" onclick="calculator(this)"> / </button> </td>
+
+</tr>
+
+<tr>
+<td> <button type="button" name="button" id="4" onclick="calculator(this)"> 4 </button> </td>
+
+<td> <button type="button" name="button" id="5" onclick="calculator(this)"> 5 </button> </td>
+
+<td> <button type="button" name="button" id="6" onclick="calculator(this)"> 6 </button> </td>
+
+<td> <button type="button" name="button" id="*" onclick="calculator(this)"> * </button> </td>
+
+</tr>
+
+<tr>
+
+<td> <button type="button" name="button" id="1" onclick="calculator(this)"> 1 </button> </td>
+
+<td> <button type="button" name="button" id="2" onclick="calculator(this)"> 2 </button> </td>
+
+<td> <button type="button" name="button" id="3" onclick="calculator(this)"> 3 </button> </td>
+
+<td> <button type="button" name="button" id="-" onclick="calculator(this)"> - </button> </td>
+
+</tr>
+
+<tr>
+
+<td> <button type="button" name="button" id="0" onclick="calculator(this)"> 0 </button> </td>
+
+<td> <button type="button" name="button" id="." onclick="calculator(this)"> . </button> </td>
+
+<td> <button type="button" name="button" id="=" onclick="calculate()"> = </button> </td>
+
+<td> <button type="button" name="button" id="+" onclick="calculator(this)"> + </button> </td>
+
+</tr>
+
+</tbody></table>
+   
+  <script type="text/javascript">
+    
+    function clearText(){
+      document.getElementById('res').value = "";
+      };
+      
+      function calculator(objectId)
+      
+      {
+         document.getElementById('res').value += objectId.id;
+      };
+      
+      function calculate()
+      
+      {
+         document.getElementById('res').value = eval(document.getElementById('res').value);
+      }
+
+</script>
+
+</center>
+
+</body>
+
+</html>
